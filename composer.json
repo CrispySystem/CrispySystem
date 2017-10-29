@@ -1,0 +1,37 @@
+{
+    "name": "stevenliebregt/crispysystem",
+    "description": "Modular PHP 7.1 Framework / CMS",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steven Liebregt",
+            "email": "s.liebregt@outlook.com"
+        }
+    ],
+    "require-dev": {},
+    "require": {
+      "php": ">=7.1",
+      "wikimedia/composer-merge-plugin": "dev-master",
+        "symfony/finder": "^3.3",
+        "symfony/http-foundation": "^3.3",
+        "smarty/smarty": "^3.1",
+        "symfony/console": "^3.3",
+        "hashids/hashids": "^2.0"
+    },
+    "extra": {
+      "merge-plugin": {
+        "include": [
+          "modules/*/composer.json"
+        ],
+        "recurse": true
+      }
+    },
+  "autoload": {
+    "psr-4": {
+      "CrispySystem\\": "core/",
+      "CrispySystem\\Components\\": "components/",
+      "CrispySystem\\Modules\\": "modules/"
+    }
+  }
+}

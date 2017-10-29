@@ -1,0 +1,8 @@
+.idea/
+components/
+modules/
+node_modules/
+storage/
+vendor/
+
+*.lock
