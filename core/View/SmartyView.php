@@ -61,7 +61,9 @@ class SmartyView implements IView
          * Smarty assign config
          */
         $this->smarty->assign('config', Config::get());
-        $this->smarty->assign('system', ['version' => Application::VERSION]);
+        $this->smarty->assign('system', [
+            'version' => Application::VERSION,
+        ]);
     }
 
     public function template(string $file, string $module): SmartyView

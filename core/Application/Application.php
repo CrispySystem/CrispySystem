@@ -3,6 +3,7 @@
 namespace CrispySystem\Application;
 
 use CrispySystem\Container\Container;
+use CrispySystem\Helpers\Config;
 use CrispySystem\Router\Route;
 use CrispySystem\Router\Router;
 use Symfony\Component\HttpFoundation\Request;
